@@ -1,2 +1,4 @@
-# Coursera
-Coursera
+# Coursera Portfolio Website
+HTML
+CSS
+JavaScript
