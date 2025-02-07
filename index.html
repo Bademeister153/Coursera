@@ -3,18 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dein Seitentitel</title>
+    <title>Mein Entwickler-Portfolio</title>
+    <meta name="description" content="Dies ist das Portfolio von [Dein Name], ein leidenschaftlicher Entwickler mit Erfahrung in Webentwicklung und Programmierung.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Willkommen auf meiner Website</h1>
+    <header role="banner">
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about-me">Über mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#skills">Fähigkeiten</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <article>
-        <h2>Mein erster Artikel</h2>
-        <p>Dies ist ein Beispieltext für den Artikelbereich.</p>
-    </article>
-    <footer>
+    
+    <section id="about-me">
+        <h2>Über mich</h2>
+        <p>Hallo, ich bin [Dein Name], ein leidenschaftlicher Entwickler mit Erfahrung in [deine Fachgebiete].</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projekte</h2>
+        <article>
+            <h3>Projekt 1</h3>
+            <figure>
+                <img src="projekt1.jpg" alt="Bild von Projekt 1">
+                <figcaption>Beschreibung des Projekts 1.</figcaption>
+            </figure>
+            <p>Details zu Projekt 1.</p>
+        </article>
+        <article>
+            <h3>Projekt 2</h3>
+            <figure>
+                <img src="projekt2.jpg" alt="Bild von Projekt 2">
+                <figcaption>Beschreibung des Projekts 2.</figcaption>
+            </figure>
+            <p>Details zu Projekt 2.</p>
+        </article>
+    </section>
+    
+    <section id="skills">
+        <h2>Fähigkeiten</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Senden</button>
+        </form>
+    </section>
+    
+    <footer role="contentinfo">
         <p>&copy; 2025 Dein Name</p>
     </footer>
 </body>
