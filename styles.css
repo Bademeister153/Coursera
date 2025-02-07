@@ -1,0 +1,190 @@
+/* Grundlegende Stile für den Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header und Navigationsleiste */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Über mich Sektion */
+#about-me {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+#about-me h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about-me p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Projekte-Sektion */
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+#projects article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+#projects img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#projects h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#projects p {
+    font-size: 16px;
+}
+
+/* Fähigkeiten-Liste */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 18px;
+    position: relative;
+    padding-left: 25px;
+}
+
+#skills ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: green;
+    font-weight: bold;
+}
+
+/* Kontaktformular */
+#contact {
+    padding: 50px 20px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Media Queries für responsives Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects article {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* Responsive Bilder und Videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Vendor-Prefixe für Flexbox */
+#projects {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-wrap: wrap; /* Safari */
+    flex-wrap: wrap;
+    -webkit-justify-content: space-around; /* Safari */
+    justify-content: space-around;
+}
